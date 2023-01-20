@@ -23,7 +23,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    //String output_val = '';
     return Scaffold(
       appBar: AppBar(
           centerTitle: true,
@@ -62,7 +61,6 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
-            // ----------------- output value here
             calcirow('9', '8', '7', '/'),
             calcirow('6', '5', '4', 'x'),
             calcirow('3', '2', '1', '+'),
@@ -75,7 +73,6 @@ class _HomePageState extends State<HomePage> {
 
   Row calcirow(String a, String b, String c, String d) {
     return Row(
-      //mainAxisAlignment: Alignment.bottomCenter,
       children: [
         calcibutton(a),
         calcibutton(b),
